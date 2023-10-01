@@ -23,7 +23,7 @@ services:
     volumes:
       - static:/static
   gateway:
-    image: atillaaa/kittygram_nginx
+    image: atillaaa/kittygram_gateway
     env_file: .env
     ports:
       - 9000:80
