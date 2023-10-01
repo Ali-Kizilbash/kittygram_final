@@ -1,4 +1,4 @@
-name: Main Taski workflow
+name: Kittygram Final Workflow
 
 on:
   push:
@@ -149,7 +149,7 @@ jobs:
       - name: Push to DockerHub
         uses: docker/build-push-action@v4
         with:
-          context: ./kittygram/
+          context: ./nginx/
           push: true
           # Тут вместо username должен быть ваш логин на Docker Hub
           tags: atillaaa/kittygram_nginx:latest
