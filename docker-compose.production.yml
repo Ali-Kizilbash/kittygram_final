@@ -15,8 +15,8 @@ services:
     image: atillaaa/kittygram_backend
     env_file: .env
     volumes:
-      - static:/static
-      - media:/app/media
+      - static:/backend_static
+      - media:/media
   frontend:
     env_file: .env
     image: atillaaa/kittygram_frontend
